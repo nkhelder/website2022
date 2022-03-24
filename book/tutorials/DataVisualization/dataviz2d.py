@@ -151,8 +151,8 @@ print(region_iceland.product_version)
 # %% tags=["hide-output"]
 # Login to Earthdata and download the ATL14 NetCDF file using icepyx
 region_iceland.earthdata_login(
-    uid="uwhackweek",  # EarthData username, e.g. penguin123
-    email="hackweekadmin@uw.edu",  # e.g. penguin123@southpole.net
+    uid="noe_hel",  # EarthData username, e.g. penguin123
+    email="nhelder@alaska.edu",  # e.g. penguin123@southpole.net
     s3token=False, # Change to True if you signed up for preliminary access
 )
 region_iceland.download_granules(path="/tmp")
@@ -420,7 +420,7 @@ region_iceland = ipx.Query(
     tracks=["1358"],  # Get one specific track only
 )
 region_iceland.earthdata_login(
-    uid="uwhackweek", email="hackweekadmin@gmail.com"  # assumes .netrc is present
+    uid="noe_hel", email="nhelder@alaska.edu"  # assumes .netrc is present
 )
 region_iceland.download_granules(path="/tmp")
 
